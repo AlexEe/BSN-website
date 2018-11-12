@@ -31,18 +31,24 @@
         text-decoration: none;
         float:left;
         margin:5px;
-        width:150px;
+        width:120px;
+        max-width:15%;
+        min-width:5%;
         height:40px;
-        padding:10px;
+        padding:15px;
         text-align:center;
         background-color:white;
         border-color:white;
         border-radius:25px;
         opacity:0.8;
-        margin-bottom:60px;
+      }
+
+      li a:hover {
+        opacity:1;
       }
 
       #welcome_section {
+        padding-top:20px;
         padding-bottom:20px;
         color:white;
         text-align:center;
@@ -57,13 +63,67 @@
         padding-bottom:10px;
         background-color:white;
         text-align:center;
-        margin-top:;
       }
 
       .clear_float {
-          clear:both;
+        clear:both;
       }
 
+      #twitter_feed {
+        width:auto;
+        max-width: 30%;
+        min-width: 200px;
+        height: 350px;
+        margin-top:33px;
+        float:right;
+        margin-right:20px;
+        scrolling:no;
+      }
+
+      #twitter_feed h1 {
+        color:white;
+      }
+
+      #twitter_feed a {
+        opacity: 0.8;
+      }
+
+      #calendar {
+        margin-top:50px;
+        margin-left:20px;
+      }
+
+      #calendar h1 {
+        color:white;
+      }
+
+      #calendar iframe {
+        max-width: 50%;
+        min-width: 20%;
+        width:auto;
+        padding:10px;
+        border-radius:10px;
+        background-color:white;
+        height:350px;
+        frameborder:100;
+        scrolling:no;
+      }
+
+      #impressum {
+        margin-top:200px;
+        background-color: MidnightBlue;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width:auto;
+        height:70px;
+      }
+
+      #impressum p {
+        color:white;
+        padding-top:15px;
+        margin-left:20px;
+      }
     </style>
   </head>
 
@@ -82,6 +142,22 @@
       <h3>We are a network of survivors who identify as bisexual. <br>
       We offer support, solidarity and community to one another through <br>weekly virtual chats via Telegram.<h3>
     </div>
+    <div id='twitter_feed'>
+      <h1>Twitter:</h1>
+      <a class="twitter-timeline" data-width="500" data-height="350"data-theme='light' data-link-color="#981CEB" href="https://twitter.com/NetworkBi?ref_src=twsrc%5Etfw">Tweets by NetworkBi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id='calendar'>
+      <h1>Next chats and events:</h1>
+      <iframe src="https://calendar.google.com/calendar/b/2/embed?title=BSN%20Chats&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=bisurvivorsnetwork%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon"></iframe>
+    </div>
+    <div id='impressum' class='clear_float'>
+      <p>Copyright: 2018. Team Atlas.</p>
+    <div>
+
+
   </body>
 
 <html>
+<!--
+<a href="https://twitter.com/NetworkBi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @NetworkBi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+-->
