@@ -9,8 +9,10 @@ x Responsive website: becomes smaller when window size shrinks
 x Made impressum
 - links to FB, Instagram: clickable icons
 x send info
-- how to make navbar work
+x how to make navbar work
 - find opensource flower pictures
+- arrange twitter and google calender with bootstrap
+- possibly: replace navbar with bootstrap navbar
 
 2. Chat page:
 - potentially: replace chat with events page
