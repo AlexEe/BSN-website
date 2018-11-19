@@ -13,6 +13,9 @@ x how to make navbar work
 - find opensource flower pictures
 - arrange twitter and google calender with bootstrap
 - possibly: replace navbar with bootstrap navbar
+- comment section
+- make calendar responsive: https://css-tricks.com/forums/topic/making-google-calendar-iframe-responsive/
+- make accessible: ariahaspopup for dropdown menu
 
 2. Chat page:
 - potentially: replace chat with events page
