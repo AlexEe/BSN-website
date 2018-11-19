@@ -6,7 +6,7 @@
     <title>Bisexual Survivors' Network</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href='css/bootstrap.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <style type='text/css'>
       body {
         margin:0;
@@ -34,10 +34,11 @@
         float:left;
         margin:5px;
         width:120px;
-        max-width:15%;
+        max-width:17%;
         min-width:5%;
-        height:40px;
-        padding:15px;
+        height:50px;
+        padding:10px;
+        padding-top:0;
         text-align:center;
         background-color:white;
         border-color:white;
@@ -55,7 +56,10 @@
         color:white;
         text-align:center;
         font-weight:bold;
-        font-size:150%;
+      }
+
+      #welcome_section h1 {
+        font-size:300%;
       }
 
       #general_info {
@@ -71,16 +75,17 @@
         clear:both;
       }
 
+      #twitter_calendar_row {
+        margin-top:50;
+      }
+
       #twitter_feed {
-        width:auto;
-        max-width: 30%;
+        max-width: 50%;
         min-width: 200px;
         height: 350px;
-        margin-top:33px;
-        float:right;
-        margin-right:20px;
         scrolling:no;
       }
+
 
       #twitter_feed h1 {
         color:white;
@@ -91,8 +96,7 @@
       }
 
       #calendar {
-        margin-top:50px;
-        margin-left:20px;
+
       }
 
       #calendar h1 {
@@ -100,14 +104,10 @@
       }
 
       #calendar iframe {
-        width:auto;
-        max-width: 50%;
-        min-width: 20%;
         padding:10px;
         border-radius:10px;
         background-color:white;
         height:350px;
-        frameborder:100;
         scrolling:no;
       }
 
@@ -148,16 +148,20 @@
       <h3>We are a network of survivors who identify as bisexual. <br>
       We offer support, solidarity and community to one another through <br>weekly virtual chats via Telegram.<h3>
     </div>
-    <div id='twitter_feed'>
-      <h1>Twitter:</h1>
-      <a class="twitter-timeline" data-width="500" data-height="350"data-theme='light' data-link-color="#981CEB" href="https://twitter.com/NetworkBi?ref_src=twsrc%5Etfw">Tweets by NetworkBi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <div id='calendar'>
-      <h1>Next chats and events:</h1>
-      <iframe src="https://calendar.google.com/calendar/b/2/embed?title=BSN%20Chats&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=bisurvivorsnetwork%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon"></iframe>
+    <div class='container'>
+        <div class='row'>
+          <div class='col-sm-6 twitter_calendar_row' id='twitter_feed'>
+            <h1>Twitter:</h1>
+            <a class="twitter-timeline" data-width="500" data-height="350"data-theme='light' data-link-color="#981CEB" href="https://twitter.com/NetworkBi?ref_src=twsrc%5Etfw">Tweets by NetworkBi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class='col-sm-6' id='calendar'>
+            <h1>Chats & Events:</h1>
+            <iframe src="https://calendar.google.com/calendar/b/2/embed?title=BSN%20Chats&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=bisurvivorsnetwork%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon"></iframe>
+          </div>
+        </div>
     </div>
     <div id='impressum' class='clear_float'>
-      <p>Copyright: 2018. Team Atlas.</p>
+      <p>Copyright 2018. Team Atlas.</p>
     <div>
 
 
