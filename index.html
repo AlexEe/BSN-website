@@ -20,8 +20,8 @@
           <a class="dropdown-toggle center_nav_bar" data-toggle="dropdown" href="chats.html">BSN Chats
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#Where and When">Where and When</a></li>
-            <li><a href="#Code of Conduct">Code of Conduct</a></li>
+            <li><a href="#Where">Where and When</a></li>
+            <li><a href="#Code">Code of Conduct</a></li>
           </ul>
         </li>
         <li><a href='statistics.html'>Statistics & Further Info</a></li>
@@ -48,7 +48,6 @@
         </div>
     </div>
     <div id="newletter">
-      <form action="action_page.php">
         <div class="container" id="newsletter">
           <h2>Subscribe to our Newsletter:</h2>
           <p>Receive the password for our bi-weekly chats via email.</p>
@@ -58,11 +57,20 @@
           <input type="text" placeholder="Name" name="name" required>
           <input type="text" placeholder="Email address" name="mail" required>
         </div>
-        <div class="container">
-          <input type="submit" value="Subscribe">
-        </div>
-      </form>
+        <div>
+          <button class="popup" onclick="myFunction()">Subsribe
+            <span class="popuptext" id="myPopup">Thank you for subscribing!</span>
+          </button>
     </div>
+
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+    </script>
+
 
     <div id='impressum' class='clear_float'>
       <p>Copyright 2018. Team Atlas.</p>
