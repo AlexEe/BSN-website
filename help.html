@@ -1,10 +1,12 @@
+<!DOCTYPE HTML>
+
 <html>
 
   <head>
-    <title>Bisexual Survivors' Network: Professional Help</title>
+    <title>Bisexual Survivors' Network</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href='css/bootstrap.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <style type='text/css'>
       body {
         margin:0;
@@ -15,27 +17,41 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        text-align: center;
+      }
+
+      .page-wrap {
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+      }
+
+      #foreground {
+        background-color:MidnightBlue;
+        opacity: 0.9;
       }
 
       ul {
         list-style-type:none;
-        margin:0;
-        padding:0;
+        text-align: center;
+        display: inline-block;
+        width: 800px;
       }
 
       li a {
-        display:inline-block;
-        color:#000;
+        color:black;
         font-size:120%;
         font-weight:bold;
         text-decoration: none;
         float:left;
         margin:5px;
+        margin-left:0px;
         width:120px;
-        max-width:15%;
+        max-width:17%;
         min-width:5%;
-        height:40px;
-        padding:15px;
+        height:50px;
+        padding:10px;
+        padding-top:0;
         text-align:center;
         background-color:white;
         border-color:white;
@@ -47,35 +63,118 @@
         opacity:1;
       }
 
+      #welcome_section {
+        padding-top:20px;
+        padding-bottom:20px;
+        color:white;
+        text-align:center;
+        font-weight:bold;
+      }
+
+      #welcome_section h1 {
+        font-size:300%;
+      }
+
+      #general_info {
+        width: 100%;
+        font-size:120%;
+        line-height:1.5;
+        padding-top:10px;
+        padding-bottom:10px;
+        background-color:white;
+        color:black;
+        margin-bottom:20px;
+        text-align:center;
+      }
+
       .clear_float {
         clear:both;
       }
 
-      h1 {
+      #twitter_feed {
+        max-width: 350px;
+        min-width: 200px;
+        scrolling:no;
+        margin-top:50;
+        border-radius: 25px;
+        border-color:white;
+      }
+
+
+      #twitter_feed h1 {
         color:white;
-        font-size:120%;
+      }
+
+      #calendar {
+
+      }
+
+      #calendar h1 {
+        color:white;
+      }
+
+      #calendar iframe {
+        padding:10px;
+        border-radius:10px;
+        background-color:white;
+        height:350px;
+        scrolling:no;
+      }
+
+      #impressum {
+        margin-top:200px;
+        background-color: MidnightBlue;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width:auto;
+        height:70px;
+      }
+
+      #impressum p {
+        color:white;
+        padding-top:15px;
+        margin-left:20px;
       }
 
       .no_opacity {
         opacity:1;
       }
+
+      .header {
+        color: white;
+        height: 1000px;
+      }
+
+      .to_the_right {
+        margin-left: 47px;
+      }
     </style>
   </head>
 
   <body>
-    <ul>
-      <li><a href='index.html'>Home</a></li>
-      <li><a href='about.html'>About BSN</a></li>
-      <li><a href='chats.html'>BSN Chats</a></li>
-      <li><a href='statistics.html'>Statistics & Further Info</a></li>
-      <li><a href='help.html' class='no_opacity'>Professional Help</a></li>
+    <div id="foreground" class="page-wrap">
+    <ul id="navbar">
+      <nav>
+        <li class="active to_the_right"><a href='index.html'>Home</a></li>
+        <li><a href='about.html'>About BSN</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="chats.html">BSN Chats
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#Where and When">Where and When</a></li>
+            <li><a href="#Code of Conduct">Code of Conduct</a></li>
+          </ul>
+        </li>
+        <li><a href='statistics.html'>Statistics & Further Info</a></li>
+        <li><a class="no_opacity" href='help.html'>Professional Help</a></li>
+      </nav>
     </ul>
+      <div class='header'>
+        <h1>Professional Help</h1>
+      </div>
 
-    <div class='clear_float'>
-      <h1>Professional Help</h1>
     </div>
-
   </body>
-
 
 <html>

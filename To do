@@ -11,12 +11,15 @@ x Made impressum
 x send info
 x how to make navbar work
 - find opensource flower pictures
-- arrange twitter and google calender with bootstrap
-- possibly: replace navbar with bootstrap navbar
+x arrange twitter and google calender with bootstrap
+x blue background added to all pages
+- navbar: fix collapse
+x centre navbar
+x add pagewrap
 - comment section
 - make calendar responsive: https://css-tricks.com/forums/topic/making-google-calendar-iframe-responsive/
 - make accessible: ariahaspopup for dropdown menu
-- toggledown 
+- toggledown
 
 2. Chat page:
 - potentially: replace chat with events page

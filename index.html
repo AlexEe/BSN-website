@@ -17,22 +17,35 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        text-align: center;
+      }
+
+      .page-wrap {
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+      }
+
+      #foreground {
+        background-color:MidnightBlue;
+        opacity: 0.9;
       }
 
       ul {
         list-style-type:none;
-        margin:0;
-        padding:0;
+        text-align: center;
+        display: inline-block;
+        width: 800px;
       }
 
       li a {
-        display:inline-block;
-        color:#000;
+        color:black;
         font-size:120%;
         font-weight:bold;
         text-decoration: none;
         float:left;
         margin:5px;
+        margin-left:0px;
         width:120px;
         max-width:17%;
         min-width:5%;
@@ -63,11 +76,13 @@
       }
 
       #general_info {
+        width: 100%;
         font-size:120%;
         line-height:1.5;
         padding-top:10px;
         padding-bottom:10px;
         background-color:white;
+        color:black;
         margin-bottom:20px;
         text-align:center;
       }
@@ -76,23 +91,18 @@
         clear:both;
       }
 
-      #twitter_calendar_row {
-        margin-top:50;
-      }
-
       #twitter_feed {
-        max-width: 50%;
+        max-width: 350px;
         min-width: 200px;
         scrolling:no;
+        margin-left:37px;
+        border-radius: 25px;
+        border-color:white;
       }
 
 
       #twitter_feed h1 {
         color:white;
-      }
-
-      #twitter_feed a {
-        opacity: 0.8;
       }
 
       #calendar {
@@ -130,16 +140,30 @@
       .no_opacity {
         opacity:1;
       }
+
+      .to_the_right {
+        margin-left: 47px;
+      }
     </style>
   </head>
 
   <body>
-    <ul>
-      <li><a href='index.html'  class='no_opacity'>Home</a></li>
-      <li><a href='about.html'>About BSN</a></li>
-      <li><a href='chats.html'>BSN Chats</a></li>
-      <li><a href='statistics.html'>Statistics & Further Info</a></li>
-      <li><a href='help.html'>Professional Help</a></li>
+    <div id="foreground" class="page-wrap">
+    <ul id="navbar">
+      <nav>
+        <li class="active to_the_right"><a class="no_opacity" href='index.html'>Home</a></li>
+        <li><a href='about.html'>About BSN</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="chats.html">BSN Chats
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#Where and When">Where and When</a></li>
+            <li><a href="#Code of Conduct">Code of Conduct</a></li>
+          </ul>
+        </li>
+        <li><a href='statistics.html'>Statistics & Further Info</a></li>
+        <li><a href='help.html'>Professional Help</a></li>
+      </nav>
     </ul>
     <div id='welcome_section' class='clear_float'>
       <h1>Welcome to BSN: <br> The Bisexual Survivors' Network</h1>
@@ -148,9 +172,9 @@
       <h3>We are a network of survivors who identify as bisexual. <br>
       We offer support, solidarity and community to one another through <br>weekly virtual chats via Telegram.<h3>
     </div>
-    <div class='container'>
+    <div class='container page-wrap'>
         <div class='row'>
-          <div class='col-sm-6 twitter_calendar_row' id='twitter_feed'>
+          <div class='col-sm-6' id='twitter_feed'>
             <h1>Twitter:</h1>
             <a class="twitter-timeline" data-width="500" data-height="350"data-theme='light' data-link-color="#981CEB" href="https://twitter.com/NetworkBi?ref_src=twsrc%5Etfw">Tweets by NetworkBi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
@@ -162,11 +186,12 @@
     </div>
     <div id='impressum' class='clear_float'>
       <p>Copyright 2018. Team Atlas.</p>
+    </div>
     <div>
-
-    <script src="js/jquery-3.3.1.min.js">
-    </script>
-
+      <script src="js/jquery-3.3.1.min.js">
+      </script>
+    </div>
+  </div>
   </body>
 
 <html>
