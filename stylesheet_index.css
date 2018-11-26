@@ -112,7 +112,7 @@ li a:hover {
 }
 
 #impressum {
-  margin-top:200px;
+  margin-top:50px;
   background-color: MidnightBlue;
   background-size: cover;
   background-position: center;
@@ -136,8 +136,10 @@ li a:hover {
 }
 
 #newsletter {
+  margin-top:50px;
   color:white;
 }
+
 
 .center_nav_bar {
   padding-top: 10px;
