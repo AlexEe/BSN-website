@@ -16,6 +16,7 @@ x blue background added to all pages
 - navbar: fix collapse
 x centre navbar
 x add pagewrap
+x add form to sign up for newsletter
 - comment section
 - make calendar responsive: https://css-tricks.com/forums/topic/making-google-calendar-iframe-responsive/
 - make accessible: ariahaspopup for dropdown menu
