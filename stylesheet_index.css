@@ -95,10 +95,6 @@ li a:hover {
   color:white;
 }
 
-#calendar {
-
-}
-
 #calendar h1 {
   color:white;
 }
@@ -136,8 +132,9 @@ li a:hover {
 }
 
 #newsletter {
-  margin-top:50px;
+  margin-top:100px;
   color:white;
+  text-align:center;
 }
 
 .center_nav_bar {

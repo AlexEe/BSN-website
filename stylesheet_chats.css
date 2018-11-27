@@ -136,6 +136,16 @@ li a:hover {
   height: 1000px;
 }
 
+.header h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.header h3 {
+  line-height:150%;
+}
+
 .to_the_right {
   margin-left: 47px;
 }
