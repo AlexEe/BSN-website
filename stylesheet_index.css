@@ -83,9 +83,9 @@ li a:hover {
 
 #twitter_feed {
   max-width: 350px;
-  min-width: 200px;
+  min-width: 150px;
   scrolling:no;
-  margin-left:37px;
+  margin-left:45px;
   border-radius: 25px;
   border-color:white;
 }
@@ -100,6 +100,8 @@ li a:hover {
 }
 
 #calendar iframe {
+  max-width:350px;
+  min-width:150px;
   padding:10px;
   border-radius:10px;
   background-color:white;
