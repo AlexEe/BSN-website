@@ -7,81 +7,65 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href='css/bootstrap.css' rel='stylesheet'>
     <link href='stylesheet_index.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type"text/javascript" src="js/functions.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   </head>
 
   <body>
     <div id="foreground" class="page-wrap">
-    <ul id="navbar">
-      <nav>
-        <li class="active to_the_right"><a class="center_nav_bar no_opacity" href='index.html'>Home</a></li>
-        <li><a class="center_nav_bar" href='about.html'>About BSN</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle center_nav_bar" data-toggle="dropdown" href="chats.html">BSN Chats
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#Where">Where and When</a></li>
-            <li><a href="#Code">Code of Conduct</a></li>
-          </ul>
-        </li>
-        <li><a href='statistics.html'>Statistics & Further Info</a></li>
-        <li><a href='help.html'>Professional Help</a></li>
-      </nav>
-    </ul>
-    <div id='welcome_section' class='clear_float'>
-      <h1>Welcome to BSN: <br> The Bisexual Survivors' Network</h1>
-    </div>
-    <div id='general_info' class='clear_float'>
-      <h3>We are a network of survivors who identify as bisexual. <br>
-      We offer support, solidarity and community to one another through <br>weekly virtual chats via Telegram.<h3>
-    </div>
-    <div class='container page-wrap'>
-        <div class='row'>
-          <div class='col-sm-6' id='twitter_feed'>
-            <h1>Twitter:</h1>
-            <a class="twitter-timeline" data-width="500" data-height="350"data-theme='light' data-link-color="#981CEB" href="https://twitter.com/NetworkBi?ref_src=twsrc%5Etfw">Tweets by NetworkBi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-          <div class='col-sm-6' id='calendar'>
-            <h1>Chats & Events:</h1>
-            <iframe src="https://calendar.google.com/calendar/b/2/embed?title=BSN%20Chats&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=bisurvivorsnetwork%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon"></iframe>
-          </div>
-        </div>
-    </div>
-    <div id="newletter">
-        <div class="container" id="newsletter">
-          <h2>Subscribe to our Newsletter:</h2>
-          <p>Receive the password for our bi-weekly chats via email.</p>
-        </div>
+      <ul id="navbar">
+        <nav>
+          <li class="active to_the_right"><a class="center_nav_bar no_opacity" href='index.html'>Home</a></li>
+          <li><a class="center_nav_bar" href='about.html'>About BSN</a></li>
+          <li><a href="chats.html" class="center_nav_bar">BSN Chats</a></li>
+          <li><a href='statistics.html'>Statistics & Further Info</a></li>
+          <li><a href='help.html'>Professional Help</a></li>
+        </nav>
+      </ul>
 
-        <div class="container" style="background-color:MidnightBlue">
+      <div id='welcome_section' class='clear_float'>
+        <h1>Welcome to BSN: <br> The Bisexual Survivors' Network</h1>
+      </div>
+
+      <div id='general_info' class='clear_float'>
+        <h3>We are a network of survivors who identify as bisexual. <br>
+        We offer support, solidarity and community to one another through <br>weekly virtual chats via Telegram.<h3>
+      </div>
+
+      <div class='row'>
+        <div class='col-sm-6' id='twitter_feed'>
+          <h1>Twitter:</h1>
+          <a class="twitter-timeline" data-width="500" data-height="350"data-theme='light' data-link-color="#981CEB" href="https://twitter.com/NetworkBi?ref_src=twsrc%5Etfw">Tweets by NetworkBi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class='col-sm-6' id='calendar'>
+          <h1>Chats & Events:</h1>
+          <iframe src="https://calendar.google.com/calendar/b/2/embed?title=BSN%20Chats&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=bisurvivorsnetwork%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon"></iframe>
+        </div>
+      </div>
+
+      <div id="page-wrap">
+        <div id="newsletter">
+          <h1>Subscribe to our Newsletter:</h1>
+          <h4>Receive the password for our bi-weekly Telegram chats via email.</h4>
+        </div>
+        <div class="container page-wrap" style="background-color:MidnightBlue">
           <input type="text" placeholder="Name" name="name" required>
           <input type="text" placeholder="Email address" name="mail" required>
         </div>
-        <div>
-          <button class="popup" onclick="myFunction()">Subsribe
-            <span class="popuptext" id="myPopup">Thank you for subscribing!</span>
+        <div id="subscribe-button">
+          <button type="button" class="popup" onclick="thankYou()">Subscribe
+            <span class="popuptext" id="thankYou">Thank you for subscribing!</span>
           </button>
+        </div>
+      </div>
+
+      <div id='impressum' class='clear_float'>
+        <p>Copyright 2018. Team Atlas.</p>
+      </div>
+
     </div>
-
-    <script>
-    // When the user clicks on div, open the popup
-    function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-    }
-    </script>
-
-
-    <div id='impressum' class='clear_float'>
-      <p>Copyright 2018. Team Atlas.</p>
-    </div>
-    <div>
-      <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-    </div>
-  </div>
-
-
   </body>
 
 <html>

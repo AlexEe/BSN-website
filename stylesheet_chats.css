@@ -136,10 +136,37 @@ li a:hover {
   height: 1000px;
 }
 
+.header h2 {
+  margin-top: 25px;
+  text-align: left;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+.header h3 {
+  margin-top: 25px;
+  text-align: left;
+  margin-left: 80px;
+}
+
 .to_the_right {
   margin-left: 47px;
 }
 
 .center_nav_bar {
   padding-top: 10px;
+}
+p{
+  text-align: left;
+  margin-left: 80px;
+}
+.statement{
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: bold;
+}
+ul.a {
+  list-style-type: circle;
+  text-align: left;
+  margin-left: 60px;
 }
