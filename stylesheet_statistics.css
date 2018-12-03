@@ -12,7 +12,8 @@ body {
 
 .page-wrap {
   text-align: center;
-  width: 800px;
+  max-width: 800px;
+  min-width: 400px;
   margin: 0 auto;
 }
 

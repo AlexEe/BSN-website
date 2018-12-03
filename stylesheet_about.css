@@ -12,7 +12,8 @@ body {
 
 .page-wrap {
   text-align: center;
-  width: 800px;
+  max-width: 800px;
+  min-width: 400px;
   margin: 0 auto;
 }
 
@@ -90,7 +91,6 @@ li a:hover {
   border-color:white;
 }
 
-
 #twitter_feed h1 {
   color:white;
 }
@@ -166,4 +166,13 @@ p {
 .statement{
   font-size: 15px;
   font-weight: bold;
+}
+
+p a {
+  text-decoration:underline;
+  color:white;
+}
+
+p a:hover {
+  color:pink;
 }
