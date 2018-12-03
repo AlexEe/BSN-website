@@ -153,13 +153,16 @@ li a:hover {
 .to_the_right {
   margin-left: 47px;
 }
-.center_nav_bar{
+
+.center_nav_bar {
   padding-top: 10px;
 }
-p{
+
+p {
   text-align: left;
   margin-left: 80px;
 }
+
 .statement{
   font-size: 15px;
   font-weight: bold;
