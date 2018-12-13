@@ -22,14 +22,17 @@ body {
   opacity: 0.9;
 }
 
-ul {
+ul.navbar {
   list-style-type:none;
   text-align: center;
   display: inline-block;
-  width: 800px;
+  width: 90%;
+  overflow:auto;
 }
 
-li a {
+@media only screen and (min-width: 801px) {
+
+ul.navbar li a {
   color:black;
   font-size:120%;
   font-weight:bold;
@@ -38,8 +41,6 @@ li a {
   margin:5px;
   margin-left:0px;
   width:120px;
-  max-width:17%;
-  min-width:5%;
   height:50px;
   padding:10px;
   padding-top:0;
@@ -48,14 +49,35 @@ li a {
   border-color:white;
   border-radius:25px;
   opacity:0.8;
-}
+}}
 
-li a:hover {
+ul.navbar li a:hover {
   opacity:1;
 }
 
+@media only screen and (max-width: 800px) {
+  ul.navbar li {
+    padding-top:10px;
+    height:50px;
+    width: 100%;
+  }
+  ul.navbar li a {
+    text-align: center;
+    float:none;
+    width:100%;
+    background-color:white;
+    padding:10px;
+    margin:5px;
+    border-color:white;
+    border-radius:25px;
+    opacity:0.8;
+    color:black;
+    font-weight:bold;
+    font-size:120%;
+  }}
+
 #welcome_section {
-  padding-top:20px;
+  padding-top:5px;
   padding-bottom:20px;
   color:white;
   text-align:center;
@@ -109,6 +131,38 @@ li a:hover {
 
 #twitter_feed h1 {
   color:white;
+}
+
+
+@media only screen and (max-width: 800px) {
+  #twitter_feed {
+    max-width: 350px;
+    min-width: 150px;
+    scrolling:no;
+    text-align: center;
+    border-radius: 25px;
+    border-color:white;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .col-sm-6 {
+    text-align: center;
+  }
+
+  #twitter_feed iframe.twitter-timeline {
+    text-align: center;
+  }
+
+  #twitter_feed iframe.twitter-timeline-rendered {
+    text-align: center;
+  }
+
+  .twitter-timeline {
+    text-align:center;
+  }
 }
 
 #calendar h1 {
