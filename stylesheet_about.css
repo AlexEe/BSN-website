@@ -133,21 +133,35 @@ li a:hover {
 
 .header {
   color: white;
-  height: 1000px;
+  height: 2600px;
+}
+
+.header h1 {
+  font-weight: bold;
+  font-size: 400%;
 }
 
 .header h2 {
-  margin-top: 50px;
+  margin-top: 35px;
   text-align: left;
   margin-left: 80px;
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .header h3 {
-
   margin-top: 25px;
   text-align: left;
   margin-left: 80px;
+  font-size: 170%;
+  line-height: 130%;
+}
+
+.header h4 {
+  text-align: left;
+  margin-left: 80px;
+  font-size: 120%;
+  line-height: 130%;
 }
 
 .to_the_right {
@@ -175,4 +189,21 @@ p a {
 
 p a:hover {
   color:pink;
+}
+
+#impressum {
+  margin-top:50px;
+  background-color: MidnightBlue;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width:auto;
+  height:70px;
+}
+
+#impressum p {
+  color:white;
+  padding-top:15px;
+  margin-left:20px;
+  text-align:center;
 }
