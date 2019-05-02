@@ -149,6 +149,11 @@ li a:hover {
   text-decoration: underline;
 }
 
+.header h2:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
 .header h3 {
   margin-top: 25px;
   text-align: left;
@@ -170,6 +175,10 @@ li a:hover {
 
 .center_nav_bar {
   padding-top: 10px;
+}
+
+.initially_hidden {
+  display: none;
 }
 
 p {
