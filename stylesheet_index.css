@@ -41,6 +41,8 @@ ul.navbar li a {
   margin:5px;
   margin-left:0px;
   width:120px;
+  max-width:17%;
+  min-width:5%;
   height:50px;
   padding:10px;
   padding-top:0;
