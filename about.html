@@ -24,7 +24,8 @@
 
       <div class="header""p">
         <h1>About Us</h1>
-          <h2>Who we are</h2>
+          <h2 onclick="toggle_visibility('aboutText');">Who we are</h2>
+          <div id="aboutText">
             <h3>We are a  group of bisexual survivors facilitating peer-lead, <br>
               online support groups for survivors of sexual and/or <br>
               domestic violence/abuse. <br><br>
@@ -32,6 +33,7 @@
               non-monosexual (bi+) survivors, working to ensure that <br>
               our voices are heard and our needs met.<br>
             </h3>
+          </div>
 
         <h2>What we do</h2>
           <h3>We run bi-weekly chats via the secure messaging app Telegram. <br><br>
@@ -92,6 +94,24 @@
 
       </div>
     </div>
+    <script>
+      function toggle_visibility(id) {
+         var e = document.getElementById(id);
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+      }
+
+      function hideText() {
+        var x = document.getElementById("aboutText");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
   </body>
 
 <html>
